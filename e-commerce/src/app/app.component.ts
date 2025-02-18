@@ -8,7 +8,7 @@ import { NavBarComponent } from "./nav-bar/nav-bar.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HomeComponent]
+    imports: [RouterOutlet, HomeComponent, NavBarComponent]
 })
 export class AppComponent {
   title = 'e-commerce';
