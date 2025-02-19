@@ -1,0 +1,35 @@
+.container-fluid{
+    height: 50dvw;
+    margin: 50px auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    min-height: 100%;
+}
+.col-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50%;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 75%;
+    text-align: left;
+}
+.col-text .col .row .btn{
+    width: max-content;
+    margin: auto;
+}
+.col-img{
+    background-image: url("../imgs/IMG-20250128-WA0034.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 50%;
+}
