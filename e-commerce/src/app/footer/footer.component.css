@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  /* Ensures footer is pushed to bottom if content is short */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#home-banner {
+  background: #fddde0; /* Light pink background */
+  padding: 3rem 1rem;
+  text-align: center;
+  position: relative;
+}
+#home-banner h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#home-banner p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+.subscribe-form .form-control {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.subscribe-form .btn {
+  background-color: #f07f50;
+  border: none;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.subscribe-form .btn:hover {
+  background-color: #e66e3c;
+}
+
+footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  padding: 2rem 1rem;
+}
+footer h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+footer p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+.social-links a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #f07f50;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}

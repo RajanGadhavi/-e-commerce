@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  /* Ensures footer is pushed to bottom if content is short */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1; /* Make main expand so footer stays at the bottom */
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #f07f50;
+}
