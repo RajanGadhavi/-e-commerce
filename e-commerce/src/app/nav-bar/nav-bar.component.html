@@ -4,46 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nav</title>
-    <link rel="stylesheet" href="./nav-bar.component.css">
+    <link rel="stylesheet" href="./nav-bar.component.css" />
+    <!-- Load Material Symbols once without extra parameters -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">BRANCY</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home-banner"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#shop">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#wishlist">Wishlist</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cart">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a href="#account" class="navlink">Account</a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined" aria-label="Star Icon"
+              >star</span
+            >
+          </li>
+        </ul>
+        <ul class="shift">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="about">About</a>
+          </li>
+          <li>Shop</li>
+          <li>Wishlist</li>
+          <li>Cart</li>
+        </ul>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined" aria-label="Search Icon"
+              >search</span
+            >
+          </li>
+          <li>
+            <span class="material-symbols-outlined" aria-label="Account Icon"
+              >account_circle</span
+            >
+          </li>
+        </ul>
       </div>
     </nav>
   </body>

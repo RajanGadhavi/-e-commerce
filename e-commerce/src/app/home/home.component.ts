@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { NavBarComponent } from "../nav-bar/nav-bar.component";
 
 @Component({
-  selector: 'app-home',
-  standalone:true,
-  imports: [],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    standalone: true,
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css',
+    imports: [NavBarComponent]
 })
 export class HomeComponent {
   message = "Hello  world"
