@@ -1,0 +1,81 @@
+/* Basic Reset & Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Breadcrumb / Header Section */
+.breadcrumb-section {
+  background-color: #fff9ef; /* Light background */
+  padding: 15px 0;
+  text-align: center;
+}
+.breadcrumb-section h6 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Main Title (Account) */
+.main-title {
+  text-align: center;
+  margin: 30px 0 40px 0;
+}
+.main-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Login & Register Container */
+.login-register {
+  margin-bottom: 60px;
+}
+.login-register h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Form Labels & Buttons */
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.btn-custom {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+}
+.btn-custom:hover {
+  background-color: #555;
+}
+
+/* Small Link Styles (e.g., Lost your password?) */
+.form-text-link {
+  font-size: 0.85rem;
+  color: #555;
+  text-decoration: none;
+}
+.form-text-link:hover {
+  text-decoration: underline;
+}
+
+/* Checkbox Label */
+.form-check-label {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+/* Disclaimer Text */
+.disclaimer {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 15px;
+}

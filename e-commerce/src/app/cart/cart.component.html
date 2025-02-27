@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page Extended</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./cart.component.css">
+  </head>
+  <body>
+    <!-- Breadcrumb / Header -->
+    <div class="breadcrumb-section py-3 text-center">
+      <div class="container">
+        <h6 class="m-0">Home / Cart</h6>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container my-5">
+      <!-- Cart Table -->
+      <div class="table-responsive">
+        <table class="table cart-table align-middle">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 50px"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+              <td>
+                <button class="btn-remove" aria-label="Remove Item">X</button>
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div class="product-thumbnail"></div>
+                  <span>Condimentum posuere consectetur urna</span>
+                </div>
+              </td>
+              <td>$115.00</td>
+              <td>
+                <div class="input-group quantity-group">
+                  <button class="btn btn-outline-secondary" type="button">
+                    -
+                  </button>
+                  <input type="text" class="form-control" value="1" />
+                  <button class="btn btn-outline-secondary" type="button">
+                    +
+                  </button>
+                </div>
+              </td>
+              <td>$115.00</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+              <td>
+                <button class="btn-remove" aria-label="Remove Item">X</button>
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div class="product-thumbnail"></div>
+                  <span>Karoett lobortis sagittis laoreet</span>
+                </div>
+              </td>
+              <td>$95.00</td>
+              <td>
+                <div class="input-group quantity-group">
+                  <button class="btn btn-outline-secondary" type="button">
+                    -
+                  </button>
+                  <input type="text" class="form-control" value="1" />
+                  <button class="btn btn-outline-secondary" type="button">
+                    +
+                  </button>
+                </div>
+              </td>
+              <td>$95.00</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+              <td>
+                <button class="btn-remove" aria-label="Remove Item">X</button>
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div class="product-thumbnail"></div>
+                  <span>Nostrum exercitationem itae ipsum</span>
+                </div>
+              </td>
+              <td>$79.00</td>
+              <td>
+                <div class="input-group quantity-group">
+                  <button class="btn btn-outline-secondary" type="button">
+                    -
+                  </button>
+                  <input type="text" class="form-control" value="1" />
+                  <button class="btn btn-outline-secondary" type="button">
+                    +
+                  </button>
+                </div>
+              </td>
+              <td>$79.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Update Cart Button -->
+      <div class="text-end mt-3">
+        <button class="btn btn-update">Update Cart</button>
+      </div>
+
+      <!-- Coupon & Cart Totals Row -->
+      <div class="row mt-5">
+        <!-- Coupon Column -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5 class="coupon-title">Coupon</h5>
+          <p>Enter your coupon code if you have one.</p>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Coupon code" />
+          </div>
+          <button class="btn btn-outline-secondary">Apply coupon</button>
+        </div>
+
+        <!-- Cart Totals Column -->
+        <div class="col-md-6">
+          <div class="cart-totals-box">
+            <h6 class="cart-totals-title mb-3">Cart Totals</h6>
+            <div class="line-item">
+              <span>Subtotal</span>
+              <span>$499.00</span>
+            </div>
+            <div class="line-item shipping-options">
+              <span>Shipping</span>
+              <div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="shipping"
+                    id="flatRate"
+                    checked
+                  />
+                  <label class="form-check-label" for="flatRate">
+                    Flat rate: $3.00
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="shipping"
+                    id="freeShipping"
+                  />
+                  <label class="form-check-label" for="freeShipping">
+                    Free shipping
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="shipping"
+                    id="localPickup"
+                  />
+                  <label class="form-check-label" for="localPickup">
+                    Local pickup
+                  </label>
+                </div>
+                <small class="text-muted mt-2 d-block">
+                  Shipping to USA. <a href="#">Change address</a>
+                </small>
+              </div>
+            </div>
+            <div class="line-item">
+              <span>Total</span>
+              <span>$504.00</span>
+            </div>
+            <button class="btn btn-checkout mt-3">Proceed to checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

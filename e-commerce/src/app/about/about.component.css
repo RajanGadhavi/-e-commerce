@@ -1,0 +1,29 @@
+.img {
+  min-height: 669px;
+  min-width: 570px;
+  background: url("../imgs/blog.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img1 {
+  min-height: 745px;
+  min-width: 1169px;
+  background: url("../imgs/art.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 480px) {
+  .img{
+    min-height: 334.5px;
+    min-width: 285px;
+  }
+
+  .img1{
+    min-height:334.5px;
+    min-width:285px ;
+  }
+}

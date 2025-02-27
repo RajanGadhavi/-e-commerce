@@ -58,3 +58,46 @@ footer p {
   font-size: 0.8rem;
   margin-right: 0.5rem;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.list-unstyled {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+}
+
+.list-unstyled li{
+  margin: 10px 0px;
+}
+
+.list-unstyled a {
+  text-decoration: none;
+  color: #666;
+  transition: all 150ms ease-in-out;
+}
+
+.list-unstyled a:hover{
+  color: orangered;
+}
+
+.logo{
+  background: url("../imgs/logo.webp");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+.container1{
+  padding: 10px;
+  margin-top: 10px;
+  height: max-content;
+}

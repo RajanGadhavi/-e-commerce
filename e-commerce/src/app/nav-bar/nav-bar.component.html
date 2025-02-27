@@ -3,48 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nav</title>
-    <link rel="stylesheet" href="./nav-bar.component.css" />
-    <!-- Load Material Symbols once without extra parameters -->
+    <title>Responsive Nav</title>
+    <!-- Material Symbols -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
+    <style>
+      /* Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+
+      /* Navbar Styles */
+      nav {
+        background: #f8f8f8;
+        padding: 10px 20px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+      /* Logo and Icon Groups */
+      .logo,
+      .icons {
+        display: flex;
+        align-items: center;
+      }
+      .logo span,
+      .icons span {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      /* Navigation Links */
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+      .nav-links li {
+        margin: 0 10px;
+      }
+      .nav-links li a {
+        text-decoration: none;
+        color: #333;
+        transition: color 150ms;
+      }
+      .nav-links li a:hover {
+        color: orangered;
+      }
+      /* Hamburger Icon (hidden by default) */
+      .hamburger {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+      }
+      /* Hide the checkbox */
+      #nav-toggle {
+        display: none;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        /* Stack container items if needed */
+        .container {
+          flex-wrap: wrap;
+        }
+        /* Hide the horizontal menu and show a vertical, toggled menu */
+        .nav-links {
+          position: absolute;
+          top: 60px;
+          left: 0;
+          right: 0;
+          background: #f8f8f8;
+          flex-direction: column;
+          align-items: center;
+          display: none;
+        }
+        .nav-links li {
+          margin: 10px 0;
+        }
+        /* Show hamburger icon */
+        .hamburger {
+          display: block;
+        }
+        /* Toggle menu display when checkbox is checked */
+        #nav-toggle:checked ~ .nav-links {
+          display: flex;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav>
       <div class="container">
-        <ul>
-          <li>
-            <span class="material-symbols-outlined" aria-label="Star Icon"
-              >star</span
-            >
-          </li>
+        <!-- Logo Section -->
+        <div class="logo">
+          <span class="material-symbols-outlined" aria-label="Star Icon"
+            >star</span
+          >
+        </div>
+        <!-- Hamburger menu (visible on smaller screens) -->
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger">
+          <span class="material-symbols-outlined" aria-label="Menu Icon"
+            >menu</span
+          >
+        </label>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="shop">Shop</a></li>
+          <li><a href="wishlist">Wishlist</a></li>
+          <li><a href="cart">Cart</a></li>
         </ul>
-        <ul class="shift">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="about">About</a>
-          </li>
-          <li>Shop</li>
-          <li>Wishlist</li>
-          <li>Cart</li>
-        </ul>
-        <ul>
-          <li>
-            <span class="material-symbols-outlined" aria-label="Search Icon"
-              >search</span
-            >
-          </li>
-          <li>
-            <span class="material-symbols-outlined" aria-label="Account Icon"
-              >account_circle</span
-            >
-          </li>
-        </ul>
+        <!-- Icons Section -->
+        <div class="icons">
+          <span class="material-symbols-outlined" aria-label="Search Icon"
+            ><a href="search" style="text-decoration: none; color: #666"
+              >search</a
+            ></span
+          >
+          <span class="material-symbols-outlined" aria-label="Account Icon"
+            ><a href=" account" style="text-decoration: none; color: #666">
+              account_circle</a
+            ></span
+          >
+        </div>
       </div>
     </nav>
   </body>

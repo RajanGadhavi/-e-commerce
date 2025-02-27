@@ -43,25 +43,25 @@
 }
 
 .Product2 {
-    min-height: 35vh;
-    background: url("../imgs/IMG-20250128-WA0036.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  min-height: 35vh;
+  background: url("../imgs/IMG-20250128-WA0036.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .Product3 {
-    min-height: 35vh;
-    background: url("../imgs/IMG-20250128-WA0037.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  min-height: 35vh;
+  background: url("../imgs/IMG-20250128-WA0037.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .img-svg {
-    min-height: 35vh;
-    background: url("../imgs/blog.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  min-height: 35vh;
+  background: url("../imgs/blog.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
